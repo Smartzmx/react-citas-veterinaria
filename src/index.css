@@ -1,0 +1,178 @@
+/*// MEDIA QUERY MANAGER  */
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+1em = 16px
+*/
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+    
+@media only screen and (max-width: 112.4em) { 
+  html {
+    font-size: 62.5%; 
+  }
+}
+
+@media only screen and (max-width: 75em) { 
+  html {
+    font-size: 59.37%; 
+  }
+}
+
+@media only screen and (max-width: 56.25em) {  
+    html {
+      font-size: 56.25%; 
+    }
+}
+
+@media only screen and (max-width: 37.5em) { 
+    html {
+      font-size: 50%; 
+    }
+}
+
+@media only screen and (max-width: 26.25em) { 
+    html {
+      font-size: 43.75%; 
+    }
+}
+
+@media only screen and (min-width: 112.5em) { 
+    html {
+      font-size:65.62%;  
+    }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: white;
+  padding: 2rem;
+}
+h1{
+  color: #33C3F0;
+  font-size: 3.2rem;
+  padding: 3rem 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+h2  {
+  color: black;
+  font-size: 2.8rem;
+  padding: 1rem 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+p{
+  font-size: 1.6rem;
+}
+textarea {
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 37.5em) and (height: 59.375em){ 
+  textarea {height: 25rem;}
+}
+
+@media only screen and (min-width: 37.5em) and (min-height: 50em) and (max-height: 59em){ 
+  textarea {height: 13rem;}
+}
+
+@media only screen and (min-width: 37.5em) and (min-height: 62.5em){ 
+  textarea {height: 31rem;}
+}
+.mis-citas{
+  max-height: 70vh;
+  overflow: auto;
+}
+.lista-citas .media {
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 3rem;
+}
+form{
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+
+.lista-citas .media:last-of-type{
+  border-bottom: 0;
+}
+.lista-citas .media-body p {
+  margin:0;
+}
+.lista-citas .media-body button {
+  margin-top: 1rem!important;
+}
+.lista-citas .media-body span {
+  font-weight: bold;
+}
+
+label {
+  color: black;
+}
+
+input[type="date"],
+input[type="time"] {
+  height: 3.8rem;
+  padding: .6rem 1rem;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 1.5rem;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+.cita {
+  padding: 0 2rem;
+  background: white;
+  border-bottom: 1px solid #e1e1e1;
+  color: black;
+  font-size: 1.6rem;
+}
+
+.cita p {
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+.cita p span {
+  font-weight: normal;
+
+}
+.cita:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.cita:last-of-type {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.button.eliminar,
+.button.eliminar:hover {
+  background-color: grey;
+  color: white;
+  margin: 2rem 0;
+}
+
+.alerta-error {
+  background-color: white;
+  color: red;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+} 
